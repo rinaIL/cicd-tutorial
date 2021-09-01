@@ -6,6 +6,9 @@ const port = 8080;
 app.get("/env", (req, res) => {
   res.send(process.env);
 });
+app.get("/health", (req, res) => {
+  res.status('200').send("Status: ok!");
+});
 app.get("/", (req, res) => {
   res.send(process.env.MESSAGE || "HELLO WORLD");
 });
