@@ -10,7 +10,7 @@ app.get("/health", (req, res) => {
   res.status('200').send("Status: ok!");
 });
 app.get("/", (req, res) => {
-  res.send(process.env.MESSAGE || "HELLO WORLD");
+  res.send(process.env.MESSAGE || "HELLO WORLD Rina");
 });
 
 app.listen(port, () => {
